@@ -55,7 +55,7 @@ En el caso de utilizar el TERMINAL Git Bush:
 1. Escribimos: git status (mostrará las actualizaciones realizadas en los archivos en esta carpeta)
 2. Escribimos: git add . (para incluir TODAS las actualizaciones de los archivos dentro del fichero de trabajo)
 3. Escribimos: git commit -m "título del fichero o nombre que queremos asignar entre comillas" (p.ej. "Segunda-Revisión")
-4. Escribimos: git push -u origin master
+4. Escribimos: git push -u origin main
 5. Si no aparecen errores entonces el fichero ha sido subido correctamente. Podemos comprobarlo en el repositorio de Git Hub.
 
 
