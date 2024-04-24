@@ -11,7 +11,7 @@ En Git Bash:
 1. --> Desde Git Bash: cd ~/Desktop/CodePy/Checkpoint-4 (carpeta específica del proyecto .../.../.../ algunas veces se dee indicar al comienzo de la líniea el símbolo '$')
        Al iniciar la terminal Git Bash se ve del siguiente modo:
        John Vélez@LAPTOP-LI9N517C MINGW64 ~
-       $ cd ~/Desktop/CodePy/Checkpoint-4 (añadimos la localiyacion del fichero para ubicarnos en nuestros ficheros de trabajo)
+       $ cd ~/Desktop/CodePy/Checkpoint-4 (añadimos la localizacion/ruta del fichero para ubicarnos en nuestro ficheros de trabajo)
 
    --> Desde Visual Studio Code: Abrir la carpeta donde estamos trabajando en nuestro proyecto (p.ej: File > open folder > Checkpoint-4)
        En VSC al ubicar la carpeta del proyecto y abrir el Terminal en GitBash (aparece simplemente como bash) nos ubica en ese fichero:
@@ -23,11 +23,23 @@ En Git Bash:
 2. Escribimos: git init (para inicializar un repositorio en git)
 3. Escribimos: git add . (esto añade TODOS los archivos del fichero seleccionado sobre la que estamos trabajando)
 4. Escribimos: git status (mostrará los archivos en esta carpeta)
-5. Escribimos: git commit -m "título del fichero o nombre que queremos asignar entre comillas" (p. ejemplo "flexbox_assignment"
-6. Abrimos Git Hub y nos logueamos. Añadimos un nuevo repositorio con un título disponible y lo hacemos público.
-7. Denttro del repositorio buscamos el apartado: <<push an existing repository from the command line>>
+5. Escribimos: git commit -m "título del fichero o nombre que queremos asignar entre comillas" (p. ejemplo "flexbox_assignment", es un comentario)
+6. Abrimos Git Hub y nos logueamos. Añadimos un nuevo repositorio con un título disponible y lo hacemos público y damos click al botón "Create repository".
+7. Denttro del repositorio buscamos el apartado: <<…or push an existing repository from the command line>>
 8. Copiamos el código con el botón que aparece dentro de esta opción en el terminal de Git Bash
 9. Si no aparecen errores entonces el fichero ha sido subido correctamente. Podemos comprobarlo en el repositorio de Git Hub. 
+
+En el caso de utilizar el TERMINAL Git Bush:
+
+1. Seguir los mismos pasos desde el 1 hasta el 6 en el que hemos creado un nuevo repositorio en Git Hub
+2. Luego para conectar el "commit" y subir los ficheros al repositorio podemos seguir ejecutando una línea a la vez en  
+   <<…or push an existing repository from the command line>>
+3. A modo de ejemplo (Repositorio: GitBash-example) --> se debe hacer con el click derecho copiando y pegando cada línea.
+   --> git remote add origin https://github.com/jfvelez2/GitBash-example.git
+   --> git branch -M main
+   --> git push -u origin main (alternativamente a estas dos líneas se puede introducir simplemente el comando: git push -u origin master)
+4. Si no aparecen errores entonces el fichero ha sido subido correctamente. Podemos comprobarlo en el repositorio de Git Hub.
+
 
 ¿Cómo ACTUALIZAR/UPDATE un fichero de trabajo con sus archivos una vez modificados?
 
@@ -35,9 +47,16 @@ En Git Bash:
 2. Escribimos: ls (para mostrar los archivos dentro del fichero de trabajo.
 3. Escribimos: git status (mostrará los archivos en este fichero que están pendientes de actualizar)
 4. Escribimos: git add . (para incluir TODAS las actualizaciones de los archivos dentro del fichero de trabajo)
-5. Escribimos: git commit -m "nombre del fichero en Git Hub que vamos a actualizar"
+5. Escribimos: git commit -m "nombre del fichero en Git Hub que vamos a actualizar" (esto aparece en el repositorio como comentario)
 6. Escribimos: git push
 7. Si no aparecen errores entonces el fichero ha sido subido correctamente. Podemos comprobarlo en el repositorio de Git Hub. 
+
+En el caso de utilizar el TERMINAL Git Bush:
+1. Escribimos: git status (mostrará las actualizaciones realizadas en los archivos en esta carpeta)
+2. Escribimos: git add . (para incluir TODAS las actualizaciones de los archivos dentro del fichero de trabajo)
+3. Escribimos: git commit -m "título del fichero o nombre que queremos asignar entre comillas" (p.ej. "Segunda-Revisión")
+4. Escribimos: git push -u origin master
+5. Si no aparecen errores entonces el fichero ha sido subido correctamente. Podemos comprobarlo en el repositorio de Git Hub.
 
 
    
